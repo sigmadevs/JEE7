@@ -16,13 +16,13 @@
     
     
     <dependencies>
-         <!-- Java Enterprice 7 Servlet  3.1.0 --> 
+         <!-- Java Enterprice 7 (servlet 3.1, jsp 2.3, EJB lite 3.2, JSF 2.2, jax rs 2.0, Web socket 1.0,EL 3.0, JSTL 1.2,JPA 2.1,Jsonp 1.0,jdbc 4.1, jndi 1.0) -->     
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
+            <groupId>javax</groupId>
+            <artifactId>javaee-web-api</artifactId>
+            <version>7.0</version>
             <scope>provided</scope>
-        </dependency>    
+        </dependency>
         <!-- junit for unit testing -->
             <dependency>
                 <groupId>junit</groupId>
