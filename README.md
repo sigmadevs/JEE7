@@ -6,7 +6,7 @@
 
 > The JEE7 Available in 3 Editions `(Choose As Per Requirements)`
 
-1. Web `(Basic profile Java EE 7 Web Application)` <a href="https://github.com/sigmadevs/JEE7/tree/web">start developement</a>
+1. Web `(Basic profile Java EE 7 Web Application)` <a href="https://github.com/sigmadevs/JEE7/tree/web" target="_blank">start developement</a>
 2. Rest `(Restfull Web Services)` *under developement*
 3. Enterprice `(Full Enterprice Components supporting Application)` *under developement*
 
@@ -55,13 +55,13 @@
 | mvn deploy | deploy the war to configured server |
 | mvn test | For Testing fire|
 
-> Visit maven central For More Dependancy [https://mvnrepository.com/]()
+> Visit maven central For More Dependancy <a href="https://mvnrepository.com/" target="_blank">mvn central</a>
 
-> Java EE 7 API Docs from Oracle [https://docs.oracle.com/javaee/7/api/]()
+> Java EE 7 API Docs from Oracle <a href="https://docs.oracle.com/javaee/7/api/" target="_blank">Java EE 7 Docs</a>
 
-> Junit 4 Docs [https://junit.org/junit4/]()
+> Junit 4 Docs <a href="https://junit.org/junit4/">Junit 4 Docs</a>
 
-> Docs [https://github.com/sigmadevs/JEE7/blob/master/JEE7.pdf]()
+> Docs <a href="https://github.com/sigmadevs/JEE7/blob/master/JEE7.pdf" target="_blank">Manual Java EE 7</a>
 
 <hr>
 
@@ -72,16 +72,16 @@
 3. Build the deployable war file with  `mvnw clean package`
 4. Get war file from folder /target/{project_name_version.war} 
 5. deploy war to server
-6. Open in browser [http://localhost:8080]()
+6. Open in browser <a href="http://localhost:8080" target="_blank">http://localhost:8080</a>
 
 > Gitpod Environment
 
-<a href="https://gitpod.io/#https://github.com/sigmadevs/JEE7">Start</a>
+<a href="https://gitpod.io/#https://github.com/sigmadevs/JEE7" target="_blank">Start</a>
 
 <hr>
 
 > Continuous Integration `(Travis & Jenkins )`
 
-Check out <a href="https://travis-ci.org/github/sigmadevs/JEE7">Travis CI Status </a>
+Check out <a href="https://travis-ci.org/github/sigmadevs/JEE7" target="_blank">Travis CI Status </a>
 
 ![build passing](https://travis-ci.org/sigmadevs/JEE7.svg?branch=master&status=passed)
