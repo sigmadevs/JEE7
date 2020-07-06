@@ -12,6 +12,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <!-- custom properties : war name & server path -->
+        <myseverpath>/home/sigma/abhijeet/programme files/linux/apache-tomcat-8.0.27/webapps</myseverpath>
+        <myprojectname>jee7</myprojectname>
+        <!-- -->
     </properties>
     
     
@@ -61,7 +65,25 @@
                         <warSourceDirectory>src/main/webapp/jsp</warSourceDirectory>
                     </configuration>
             </plugin>
+        <!--  For Deploy on server -->
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>integration-test</phase>
+                        <configuration>
+                            <tasks>
+                                <copy file="target/${myprojectname}.war" tofile="${myseverpath}/${myprojectname}.war" />
+                            </tasks>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
+        <finalName>${myprojectname}</finalName> <!-- war file name -->
     </build>
     
 </project>
