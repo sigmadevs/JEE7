@@ -4,12 +4,6 @@
 
 > <h2> JEE7 - A Java Enterprice Edition 7 With Maven Support & junit Testing starter </h2>
 
-> The JEE7 Available in 3 Editions `(Choose As Per Requirements)`
-
-1. Web `(Basic profile Java EE 7 Web Application)` <a href="https://github.com/sigmadevs/JEE7/tree/web" target="_blank">start developement</a>
-2. Rest `(Restfull Web Services)` *under developement*
-3. Enterprice `(Full Enterprice Components supporting Application)` *under developement*
-
 <hr>
 
 > <h3> JEE 7 Enterprice components specification </h3>
@@ -67,10 +61,9 @@
 
 > <h2> Getting Started <h2>
 
-1. Get any 1 Edition of JEE7 `(web, rest & enterprice as per requirement)`
-2. Write some code or go with template
+1. git clone https://github.com/sigmadevs/JEE7
 3. Build the deployable war file with  `mvnw clean package`
-4. Get war file from folder /target/{project_name_version.war} 
+4. Get war file from folder /target/{myprojectname.war} 
 5. deploy war to server
 6. Open in browser <a href="http://localhost:8080" target="_blank">http://localhost:8080</a>
 
