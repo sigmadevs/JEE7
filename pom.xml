@@ -25,8 +25,21 @@
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
             <version>7.0</version>
-            <scope>provided</scope>
         </dependency>
+        
+        <dependency>
+            <groupId>org.glassfish.jersey.containers</groupId>
+            <artifactId>jersey-container-servlet</artifactId>
+            <version>2.27</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.glassfish.jersey.inject</groupId>
+            <artifactId>jersey-hk2</artifactId>
+            <version>2.27</version>
+        </dependency>
+
+
         <!-- junit for unit testing -->
             <dependency>
                 <groupId>junit</groupId>
@@ -34,6 +47,7 @@
                 <version>4.0</version>
                 <scope>test</scope>
             </dependency>
+            
             <!-- Mysql Database -->
             <!-- dependency>
                 <groupId>mysql</groupId>
@@ -62,7 +76,7 @@
                          <!-- The Web.xml deployement discriptor -->
                         <webXml>src/main/webapp/WEB-INF/web.xml</webXml> 
                         <!-- The Web Directory where your static and jsp file available -->
-                        <warSourceDirectory>src/main/webapp/jsp</warSourceDirectory>
+                        <warSourceDirectory>src/main/webapp/</warSourceDirectory>
                     </configuration>
             </plugin>
         <!--  For Deploy on server -->

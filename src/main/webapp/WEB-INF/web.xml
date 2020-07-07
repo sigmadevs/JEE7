@@ -1,15 +1,18 @@
 <web-app>
 
-
-<servlet>
-<servlet-name>hello</servlet-name>
-<servlet-class>com.sigma.jee7.servlets.Hello</servlet-class>
-</servlet>
-
-
-<servlet-mapping>
-<servlet-name>hello</servlet-name>
-<url-pattern>/hello</url-pattern>
-</servlet-mapping>
+<!-- jersey restfull -->
+     <servlet> 
+        <servlet-name>jersey-restfull-services</servlet-name> 
+        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class> 
+        <init-param> 
+            <param-name>jersey.config.server.provider.packages</param-name> 
+            <param-value>com.sigma.jee7.controller</param-value> <!-- Restfull service package -->
+        </init-param> 
+    </servlet> 
+    
+   <servlet-mapping> 
+      <servlet-name>jersey-restfull-services</servlet-name> 
+      <url-pattern>/api/*</url-pattern> <!-- Rest Root Url -->
+   </servlet-mapping>   
 
 </web-app>
