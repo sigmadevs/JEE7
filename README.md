@@ -30,11 +30,12 @@
 - src/main/webapp `(Static Assets & Jsp Pages)`
 - src/test/java `(Java Test Files)`
 - src/main/webapp/WEB-INF/web.xml `(Servlet Mapper / Deployment discriptor)`
-- src/main/webapp/jsp/ `(jsp files)`
-- src/main/java/com/sigma/servlets/ `(Servlets)`
-- src/main/java/com/sigma/beans/ `(Java Beans)`
+- src/main/webapp/ `(jsp views)`
+- src/main/java/com/sigma/jee7/controller `(Java Restfull api)`
+- src/main/java/com/sigma/model/ `(Models Classes)`
 - pom.xml `(Maven Project Object Model)`
 - mnvw `(Maven Wrapper)`
+- run `(To Start build war, Start server & Deploy war file to server)` Note `(Configure your server in pom.xml & Run file)`
 
 <hr>
 
@@ -57,9 +58,11 @@
 
 > Docs <a href="https://github.com/sigmadevs/JEE7/blob/master/JEE7.pdf" target="_blank">Manual Java EE 7</a>
 
+> Jersey <a href="https://eclipse-ee4j.github.io/jersey.github.io/documentation/latest/index.html">jax-rs</a>
+
 <hr>
 
-> <h2> Getting Started <h2>
+> <h2> Getting Started </h2>
 
 1. git clone https://github.com/sigmadevs/JEE7
 3. Build the deployable war file with  `mvnw clean package`
@@ -67,9 +70,13 @@
 5. deploy war to server
 6. Open in browser <a href="http://localhost:8080" target="_blank">http://localhost:8080</a>
 
+> <h2> To Build and deploy Directly on tomcat </h2>
+1. Configure your tomcat server in pom.xml(properties myserverpath)
+2. Run Command `(./mvnw integration-test)` OR use RUN file 
+
 > Gitpod Environment
 
-<a href="https://gitpod.io/#https://github.com/sigmadevs/JEE7" target="_blank">Start</a>
+<a href="https://gitpod.io/#https://github.com/sigmadevs/JEE7" target="_blank">START DEVELOPEMENT</a>
 
 <hr>
 
