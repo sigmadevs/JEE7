@@ -21,6 +21,7 @@
 - Jdbc 4.1
 - Jndi 1.0
 - junit Test : 4.0
+- Hibernate 5
 
 <hr>
 
@@ -60,7 +61,13 @@
 
 > Jersey <a href="https://eclipse-ee4j.github.io/jersey.github.io/documentation/latest/index.html">jax-rs</a>
 
+> Hibernate <a href="https://docs.jboss.org/hibernate/orm/5.0/javadocs/">Hibernate 5 javadocs</a>
+
 <hr>
+
+> <h2> To Run Standalone </h2>
+ 1. ```java -jar /target/standalone.jar -httpPort=8080 ```
+ 2. Open Web Browser http://localhost:8080/standalone/
 
 > <h2> Getting Started </h2>
 
@@ -69,10 +76,6 @@
 4. Get war file from folder /target/{myprojectname.war} 
 5. deploy war to server
 6. Open in browser <a href="http://localhost:8080" target="_blank">http://localhost:8080</a>
-
-> <h2> To Build and deploy Directly on tomcat </h2>
-1. Configure your tomcat server in pom.xml(properties myserverpath)
-2. Run Command `(./mvnw integration-test)` OR use RUN file 
 
 > Gitpod Environment
 
@@ -85,3 +88,6 @@
 Check out <a href="https://travis-ci.org/github/sigmadevs/JEE7" target="_blank">Travis CI Status </a>
 
 ![build passing](https://travis-ci.org/sigmadevs/JEE7.svg?branch=master&status=passed)
+
+> Note *
+Its recommendation to Use Web Server to Run & Deploy ```(Standalone Server Tomcat 7 is under developement)```

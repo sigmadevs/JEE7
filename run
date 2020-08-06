@@ -1,3 +1,0 @@
-#!/bin/sh
-
-./mvnw clean package && ./mvnw integration-test && /home/sigma/abhijeet/programme\ files/linux/apache-tomcat-8.0.27/bin/catalina.sh stop -force && /home/sigma/abhijeet/programme\ files/linux/apache-tomcat-8.0.27/bin/catalina.sh start && echo "\n\n\n Hoooray!!!"
